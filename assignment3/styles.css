@@ -1,0 +1,56 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background: url(img/fantasybackground.jpg);
+}
+
+img {
+    border:5px solid #A03AE8;
+}
+
+header, section, footer {
+    margin:10px auto;
+    width:70%;
+    padding:5px 10px 10px 5px;
+    border-radius:10px;
+    color: #A03AE8;
+}
+
+header {
+    background: #0CDAE8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    background: #00FFC9;
+}
+
+footer {
+    background: #0CE87A;
+}
+
+nav li {
+    list-style-type: none;
+    float:left;
+}
+nav a {
+    background:#89DEFF;
+    color: white;
+    text-decoration:none;
+    padding:5px;
+}
+
+nav a:hover {
+    background: #0DFF4C;
+}
+
+table, th, td {
+    border:2px solid black;
+    padding:5px;
+    margin:10px 0px 15px 0px;
+    background: #686CFF;
+    color: #000000;
+}

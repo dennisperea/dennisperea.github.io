@@ -1,0 +1,47 @@
+* {
+    box-sizing:border-box;
+    /*padding:0;
+    margin:0;*/
+}
+
+body {
+    background: url(img/background.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header, section, footer {
+    margin:10px auto;
+    width:70%;
+    padding:5px 10px 10px 5px;
+    border-radius:10px;
+}
+
+header {
+    background: aquamarine;
+    background: rgba(218,112,214,0.8);
+    
+}
+
+section {
+    background: orchid;
+}
+
+footer {
+    background: palegreen;
+}
+
+nav li {
+    list-style-type: none;
+    float:left;
+}
+nav a {
+    background: hotpink;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    background: aquamarine;
+}
