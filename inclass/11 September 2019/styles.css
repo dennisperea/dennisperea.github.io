@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: lightgoldenrodyellow;
+}
+
+section {
+    background: lightcyan;
+}
+
+footer {
+    background: lightblue;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.twocolumns {
+    background: lightpink;
+    /* flex-direction: column */
+
+    justify-content: space-around;
+}
+
+.col1of2 {
+    background: lightgreen;
+    /* This makes the columns even (or porportional), without it, text is adjusted to content*/
+    flex:1;
+}
+
+.col2of2 {
+    background: lightgrey;
+    flex:1;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.threecolumns {
+    background: lightblue;
+}
+
+.col1of3 {
+    background:lightcoral;
+    flex: 2;
+}
+
+.col2of3 {
+    background:lightseagreen;
+    flex:1;
+}
+
+.col3of3 {
+    background:lightgreen;
+    flex:1;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.grid {
+    background: lightslategray;
+}
+
+.col1ofgrid {
+    background: red;
+}
+
+.col2row1ofgrid {
+    background: blue;
+}
+
+.col2row2ofgrid {
+    background: blueviolet;
+}
+
+.col2 {
+    flex-direction: column;
+}
+
+.images {
+    margin:20px;
+    justify-content: space-between;
+}
+
+/*Does this if the minimum width is at least*/
+@media (min-width:900px) {
+    .twocolumns, .threecolumns, .grid, .images {
+        display:flex;
+    }
+}
