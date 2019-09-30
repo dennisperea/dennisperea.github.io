@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+}
+
+head {
+    margin-bottom:10px;
+}
+
+.USC-header {
+    background: #010101;
+    color:#FFFFFF;
+    padding: 30px;
+}
+
+.menu {
+    background: #73000A;
+    color:#FFFFFF;
+    padding:15px;
+    margin-bottom: 15px;
+}
+
+.footer-container{
+    display: flex;
+}
+
+.footer-bar{
+    flex-direction: column;
+    background: #73000A;
+    color: #FFFFFF;
+}
+
+.footer-note{
+    background: #010101;
+    color:white;
+    margin-top:3px;
+    padding:5px;
+}
+
+h1 {
+    color: #73000A;
+    font-weight: 900;
+    font-size: 35px;
+    font-stretch: ultra-condensed;
+}
+
+h2 {
+    color: #73000A;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+h3 {
+    color: #73000A;
+    padding: 10px;
+}
+
+nav{
+    text-align: center;
+    margin:auto;
+}
+nav li {
+    list-style-type:none;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: #570008;
+}
+
+.col1of2{
+    margin: 20px 0px 20px 0px;
+}
+
+.col2of2{
+    margin: 20px;
+}
+
+.group-col{
+    justify-content: center;
+}
+
+.group-col1of2 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding:20px;
+    flex-basis: 60%;
+}
+
+.group-col2of2 {
+    flex-direction: column;
+    flex-basis: 20%;
+}
+
+.girls-dorm-photo { 
+    justify-content:center;
+    margin:auto;
+}
+
+.great-value {
+    margin: 100px 0px 20px 0px;
+    height: 150px;
+    width: 280px;
+    border-style: groove;
+    border-width: 1px;
+    border-left-style: solid;
+    border-left-color: #73000A;
+    border-left-width: 5px;
+}
+
+.university-housing {
+    width:280px;
+    border-style: groove;
+    border-width: 1px;
+    border-left-style: solid;
+    border-left-color: #73000A;
+    border-left-width: 5px;
+    background: #ECECEC;
+    margin-bottom: 10px;
+}
+hr {
+    width: 96%;
+    height: 1px;
+}
+
+.body-section-text{
+    margin:10px 0px 10px 0px;
+}
+
+.living-here-text{
+    margin: 20px 0px 20px 0px;
+}
+
+.great-value-text {
+    padding: 0px 10px 15px 10px;
+}
+
+.university-housing-text {
+    padding: 10px;
+}
+
+.spacer {
+    margin: 20px;
+}
+
+.housing-photo {
+    width:100%;
+}
+
+
+.social-media-buttons{
+    float:right;
+    margin: 10px 120px 10px 0px;
+    height:75%;
+    width:20%;
+}
+
+.foot-col1of2 {
+    flex-direction: column;
+    flex:1;
+    
+}
+
+.foot-col2of2 {
+    flex:2;
+}
+
+.foot-col1of3 {
+    flex-basis: 40%;
+}
+
+.foot-col2of3 {
+    flex-basis: 20%;
+}
+
+.foot-col3of3 {
+    flex-basis: 15%;
+}
+
+.foot-hr {
+    height: 2px;
+    background-color:#FFFFFF;
+}
+
+.footer-header {
+    color:#FFFFFF;
+    font-size: 15px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.footer-list li{
+    list-style-type:none;
+    text-align: left;
+    margin:0px;
+    text-emphasis: none;
+    font-size: 10px;
+    padding:5px;
+}
+
+.searchbox {
+    right:250px;
+    margin:auto;
+    background: #010101;
+    color: #FFFFFF;
+    padding: 10px 60px 10px 10px;
+    border-width: 2px;
+}
+
+@media (min-width:900px) {
+    .header-container, .footer-container, .body-section, .USC-header,.footer-list-container, .menu, .footer-bar, .group-col, .group-col1of2, .group-col2of2, .girls-dorm-photo{
+        display:flex;
+    }
+
+    nav li {
+        flex-wrap: wrap;
+        float:left;
+        margin: 0px 30px 0px 30px;
+    }
+
+    .top-logo, .footer-note-text{
+        margin-left: 100px;
+    }
+
+    .bottom-logo {
+        padding:10px;
+        margin-left: 150px;
+    }
+
+    .foot-col1of3{
+        margin-left: 150px;
+    }
+}
+
+
+
+
