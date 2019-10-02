@@ -4,6 +4,7 @@
     margin:0px;
 }
 
+/* Header */
 head {
     margin-bottom:10px;
 }
@@ -19,41 +20,6 @@ head {
     color:#FFFFFF;
     padding:15px;
     margin-bottom: 15px;
-}
-
-.footer-container{
-    display: flex;
-}
-
-.footer-bar{
-    flex-direction: column;
-    background: #73000A;
-    color: #FFFFFF;
-}
-
-.footer-note{
-    background: #010101;
-    color:white;
-    margin-top:3px;
-    padding:5px;
-}
-
-h1 {
-    color: #73000A;
-    font-weight: 900;
-    font-size: 35px;
-    font-stretch: ultra-condensed;
-}
-
-h2 {
-    color: #73000A;
-    font-weight: 800;
-    font-size: 18px;
-}
-
-h3 {
-    color: #73000A;
-    padding: 10px;
 }
 
 nav{
@@ -76,6 +42,16 @@ nav a:hover {
     background: #570008;
 }
 
+.searchbox {
+    right:250px;
+    margin:auto;
+    background: #010101;
+    color: #FFFFFF;
+    padding: 10px 60px 10px 10px;
+    border-width: 2px;
+}
+
+/* Body */
 .col1of2{
     margin: 20px 0px 20px 0px;
 }
@@ -100,9 +76,10 @@ nav a:hover {
     flex-basis: 20%;
 }
 
-.girls-dorm-photo { 
+.banner { 
     justify-content:center;
     margin:auto;
+    max-width: 100%;
 }
 
 .great-value {
@@ -155,6 +132,24 @@ hr {
     width:100%;
 }
 
+/* Footer */
+
+.footer-container{
+    display: flex;
+}
+
+.footer-bar{
+    flex-direction: column;
+    background: #73000A;
+    color: #FFFFFF;
+}
+
+.footer-note{
+    background: #010101;
+    color:white;
+    margin-top:3px;
+    padding:5px;
+}
 
 .social-media-buttons{
     float:right;
@@ -209,17 +204,29 @@ hr {
     padding:5px;
 }
 
-.searchbox {
-    right:250px;
-    margin:auto;
-    background: #010101;
-    color: #FFFFFF;
-    padding: 10px 60px 10px 10px;
-    border-width: 2px;
+/* Styling */
+
+h1 {
+    color: #73000A;
+    font-weight: 900;
+    font-size: 35px;
+    font-stretch: ultra-condensed;
 }
 
+h2 {
+    color: #73000A;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+h3 {
+    color: #73000A;
+    padding: 10px;
+}
+
+
 @media (min-width:900px) {
-    .header-container, .footer-container, .body-section, .USC-header,.footer-list-container, .menu, .footer-bar, .group-col, .group-col1of2, .group-col2of2, .girls-dorm-photo{
+    .header-container, .body-section, .USC-header,.footer-list-container, .menu, .footer-bar, .group-col, .group-col1of2, .group-col2of2, .banner{
         display:flex;
     }
 
