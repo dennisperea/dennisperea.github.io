@@ -1,6 +1,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    margin: 0px;
 }
 
 /* Header */
@@ -126,6 +127,11 @@ h2 {
     flex-basis: 15%;
 }
 
+.footer-note{
+    background: #010101;
+    color:white;
+    padding:5px 20px 5px 20px;
+}
 
 @media (min-width:900px){
     #main-nav ul {
