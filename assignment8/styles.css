@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body stuff*/
+body {
+    background: #000000;
+}
+
+.body-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#left-container, #right-container {
+    background: #3399FF;
+    margin: 10px;
+    flex-basis: 30%;
+    padding-bottom: 150px;
+    border-radius: 5px;
+}
+
+/* Text Styling */
+h1 {
+    text-align: center;
+}
+
+p, button {
+    margin-left: 20px;
+}
+
+button, input {
+    background: #000000;
+    color: #3399FF;
+    border:none;
+    padding:5px;
+}
+
+button {
+    border-radius:5px;
+}

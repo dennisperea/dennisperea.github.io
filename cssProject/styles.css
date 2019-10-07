@@ -51,6 +51,13 @@ nav a:hover {
     border-width: 2px;
 }
 
+#hamburger div {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
 /* Body */
 .col1of2{
     margin: 20px 0px 20px 0px;
@@ -247,6 +254,20 @@ h3 {
 
     .foot-col1of3{
         margin-left: 150px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+@media (max-width:900px){
+    #navbar.hidden{
+        display: none;
+    }
+
+    #main-nav{
+        padding: 5px;
     }
 }
 
