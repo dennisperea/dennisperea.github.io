@@ -1,17 +1,32 @@
 "using strict"
+/* 1 3 2 4 5
+* await lets you keep going throught the rest of the code instead of blocking
+*/
+async function displayShoe(){
+    console.log("3");
+    let response = await fetch("https://dennisperea.github.io/inclass/2%20October/28%20October%202019/json/shoe.json");
+    console.log("4");
+    console.log(response);
+    console.log("5");
 
-function special(){
-    console.log("In special beginning");
-    console.log(setTimeout(doStuff,2000));
-    console.log("In special ending");
+    let shoeJson = await response.json();
+    let shoeName = shoeJson.name;
+    let shoeBrand = shoeJson.brand;
+    let reviews = shoeJson.comments;
+
+    //append a section with info about the shoe to page
+    let section = document.createElement("section");
+    section.innerHTML = `${shoeName} by ${shoeBrand}`;
+    let content = document.getElementById("content");
+    content.append(section);
+    
 }
 
-function doStuff(){
-    console.log("in do stuff");
-}
+window.onload = function(){
+    this.console.log("1");
+    this.displayShoe();
+    this.console.log("2");
 
-window.onload = function() {
-    this.console.log("Before calling special");
-    this.special();
-    this.console.log("After calling special");
+    let content = document.createElement("section");
+    
 }

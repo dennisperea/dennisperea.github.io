@@ -1,0 +1,17 @@
+[
+    {
+    "name":"x-mean flyer",
+    "brand":"merell",
+    "price":"35.42",
+    "rating":"5",
+    "comments":["Best shoe ever", "I love your shoe", "X-MEN!"]
+    }
+
+    {
+    "name":"y-mean flyer",
+    "brand":"derell",
+    "price":"45.42",
+    "rating":"4",
+    "comments":["Best shoe ever xD", "AHHHHHHHHHH I love your shoe", "Y-MEN!"]
+    }
+]
