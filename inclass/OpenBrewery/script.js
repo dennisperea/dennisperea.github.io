@@ -9,7 +9,7 @@ async function displayBrewery(){
         // each brewery in brewery array
         let brewery = breweryJson[i];
         //append section
-        contentDiv.append(getBrewery(brewery))
+        contentDiv.append(getBrewery(brewery));
     }
 }
 
