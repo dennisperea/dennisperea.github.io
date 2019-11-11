@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Pikachu",
+        "nickname": "The Mouse Pokemon",
+        "type": "Electric",
+        "height": "0.4m",
+        "weight": "6.0 kg",
+        "ability": "Static",
+        "img":"./img/pikachu.png",
+        "moves": ["Tail Whip", "Shock",  "Thunder", "Volt Tackle"]
+    },
+
+    {
+        "name": "Charmander",
+        "nickname": "The Lizard Pokemon",
+        "type": "Fire",
+        "height": "0.6m",
+        "weight": "8.5 kg",
+        "ability": "Blaze",
+        "img":"./img/charmander.png",
+        "moves": ["Tackle", "Ember",  "Flamethrower", "Dig"]
+    },
+
+    {
+        "name": "Bulbasaur",
+        "nickname": "The Seed Pokemon",
+        "type": "Leaf",
+        "height": "0.7m",
+        "weight": "6.9 kg",
+        "ability": "Overgrow",
+        "img":"./img/bulbasaur.png",
+        "moves": ["Tackle", "Razor Leaf",  "Vine Whip", "Solar Beam"]
+    },
+
+    {
+        "name": "Squirtle",
+        "nickname": "The Tiny Turtle Pokemon",
+        "type": "Water",
+        "height": "0.5m",
+        "weight": "9.0 kg",
+        "ability": "Torrent",
+        "img":"./img/squirtle.png",
+        "moves": ["Scratch", "Withdraw",  "Watergun", "Hydro Pump"]
+    },
+
+    {
+        "name": "Jigglypuff",
+        "nickname": "The Balloon Pokemon",
+        "type": "Normal",
+        "height": "0.5m",
+        "weight": "5.5 kg",
+        "ability": "Cute Charm",
+        "img":"./img/jigglypuff.png",
+        "moves": ["Pound", "Sing",  "Rest", "Mimic"]
+    },
+
+    {
+        "name": "Lapras",
+        "nickname": "The Transport Pokemon",
+        "type": "Water",
+        "height": "2.5m",
+        "weight": "220.0 kg",
+        "ability": "Water Absorb",
+        "img":"./img/lapras.png",
+        "moves": ["Surf", "Water Gun",  "Ice Beam", "Perish Song"]
+    }
+]
