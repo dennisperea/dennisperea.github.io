@@ -25,11 +25,20 @@ function getPokemon(pokemon){
 }
 
 function addImg(path){
-    const basePath = "https://portiaportia.github.io/csce242/json/";
-    let fullPath = basePath + path;
     let imgElem = document.createElement("img");
-    imgElem.src = fullPath;
+    imgElem.src = path;
     return imgElem;
+}
+
+function addPara(text){
+    let paraElem = document.createElement("p");
+    paraElem.innerText = text;
+    return paraElem;
+}
+
+function addPokemonDetails(Pokemon){
+    let ulElem = document.createElement("ul");
+    return null;
 }
 
 window.onload = function(){
