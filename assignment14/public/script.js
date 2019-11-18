@@ -50,7 +50,7 @@ async function addMonster(){
         body: JSON.stringify(monster),
     });
 
-    if(response != 200){
+    if(response.status != 200){
         console.log("Error adding song");
         return;
     }

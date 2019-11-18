@@ -55,7 +55,7 @@ app.post('/api/monsters', (req,res)=>{
     }
     console.log(monster.name);
     monsters.push(monster);
-    res.send(monster);
+    res.status(200).send(monster);
 });
 
 //listen
