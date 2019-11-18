@@ -45,9 +45,33 @@ async function getSongElemByID() {
     songDiv.append(songTitle);
 }
 
+async function addSong(){
+    const songName = document.getElementById("title-input").value;
+    const songSinger = document.getElementById("singer-input").value;
+    const songGenre = document.getElementById("genre-input").value;
+    console.log(songName + songGenre+ songSinger);
+
+    let song = {"name":songName, "singer":songSinger, "genre":songGenre};
+    let response = await fetch('/api/songs',{
+        //changes from get to post request
+        method: 'POST',
+        // we are passing json code
+        header:{
+            'Content-type':'application.json;charset-utf-8'
+        },
+        body: JSON.stringify(song)
+    });
+
+    let result = await response.json();
+    console.log("Response from server" + result);
+}
+
 
 window.onload = function(){
     //this.showSongs();
     const viewSongButtonElem = this.document.getElementById("view-song");
     viewSongButtonElem.onclick = this.getSongElemByID;
+
+    const addSongButtonElem = this.document.getElementById("add-song");
+    addSongButtonElem.onclick = this.addSong;
 }

@@ -35,6 +35,19 @@ app.get('/api/songs/:id', (req,res)=>{
     res.send(song);
 });
 
+//post request
+app.post('/api/songs',(req,res)=>{
+    const song = {
+        id: songs.length + 1,
+        name: req.body.name,
+        singer: req.body.singer,
+        genre : req.body.genre
+    }
+
+    songs.push(song);
+    res.send(song);
+});
+
 //listen 
 const port = process.env.PORT || 3000;
 app.listen(port,()=>{
