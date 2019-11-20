@@ -58,6 +58,60 @@ app.post('/api/monsters', (req,res)=>{
     res.status(200).send(monster);
 });
 
+//update a monster
+app.put('/api/monsters/:id', (req,res)=>{
+    const requestedId = parseInt(req.params.id);
+    const monster = monsters.find(s =>s.id === requestedId);
+
+    //no monster with matchin id in array
+    if(!monster) {
+        res.status(404).send(`The monster with id ${requestedId} was not found`);
+        return;
+    }
+
+    //validating monster with schema
+    const result = validateMonster(req.body);
+
+    if(result.error){
+        res.status(400).send(result.error.details[0].message);
+        return;
+    }
+
+    //update
+    monster.name = req.body.name,
+    monster.abilities = req.body.abilities,
+    monster.weakness = req.body.weakness,
+    monster.description = req.body.description
+    res.send(monster);
+
+});
+
+app.delete('/api/monsters/:id',(req,res)=>{
+    const requestedId = parseInt(req.params.id);
+    const monster = monsters.find(s =>s.id === requestedId);
+
+    //no monster with matchin id in array
+    if(!monster) {
+        res.status(404).send(`The monster with id ${requestedId} was not found`);
+        return;
+    }
+
+    let index = monsters.indexOf(monster);
+    monsters.splice(index,1);
+    res.send(monster);
+});
+
+function validateMonster(monster){
+    const schema = {
+        name:Joi.string().required(),
+        abilities:Joi.string().required(),
+        weakness:Joi.string().required(),
+        description:Joi.string().required()
+    }
+
+    return Joi.validate(monster, schema);
+}
+
 //listen
 const port = process.env.PORT || 3000;
 app.listen(port, ()=>{
