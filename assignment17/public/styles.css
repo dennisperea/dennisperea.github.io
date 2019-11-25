@@ -1,0 +1,37 @@
+* {
+    margin: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*sections*/
+body {
+    background: grey;
+}
+
+.videogame {
+    background: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#add-videogame {
+    background: #02DCE8;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* Specific Stylings */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    border: 2px solid black;
+    padding: 5px;
+    width: 30px;
+    height: 38px;
+}
+
+.hidden {
+    visibility: hidden;
+}
