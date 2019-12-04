@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </header>
+
+    <section id ="boba">
+        <img src="./img/table.png" id = "table">
+        <img src="./img/cooltext342471324464805.png" id="logo">
+    </section>
+
+    <body>
+        <nav id="nav-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </nav>
+
+        <section class="main-body-content">
+            <button id="create-form-btn"> + </button>
+            <div id="create-boba" class="hidden">
+                <div class="modify-div">
+                <h3> Create Your Own Boba Tea!</h3>
+                <p> Drink Name: <input type="text" id="name-input"></p>
+                <p> Creator: <input type="text" id="creator-input"></p>
+                <p> Tea Flavor: <input type="text" id="tea-input"></p>
+                <p> Boba Pearl Flavor: <input type="text" id="boba-input"></p>
+                <p> Color: <input type="text" id="color-input"></p>
+                <p> Additional Toppings <textarea rows="5" id="toppings-input"></textarea></p>
+                <button id="add-boba-btn">Add Boba Tea Creation! </button>
+                <p id="feedback" class="hidden"></p>
+                </div>
+                
+                <div id="edit-boba-form" class="modify-div">
+                    <h3> Edit a Boba Tea</h3>
+                    <p> Drink Name: <input type="text" id="edit-name-input"></p>
+                    <p> Creator: <input type="text" id="edit-creator-input"></p>
+                    <p> Tea Flavor: <input type="text" id="edit-tea-input"></p>
+                    <p> Boba Pearl Flavor: <input type="text" id="edit-boba-input"></p>
+                    <p> Color: <input type="text" id="edit-color-input"></p>
+                    <p> Additional Toppings <textarea rows="5" id="edit-toppings-input"></textarea></p>
+                    <button id="add-boba-btn"> Edit Boba Tea </button> 
+                </div>
+
+                <div class="modify-div">
+                    <h3> Delete a Boba Tea</h3>
+                    <p>ID: <input id="id"></p>
+                    <button id="delete-btn">Delete Boba Tea</button>
+                </div>
+            </div>
+
+            <div id = "creations-div"></div>
+        </section>
+    </body>
+
+
+</html>

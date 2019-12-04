@@ -25,6 +25,7 @@ head {
 nav{
     text-align: center;
     margin:auto;
+    display: flex;
 }
 nav li {
     list-style-type:none;

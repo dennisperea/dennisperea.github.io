@@ -77,9 +77,11 @@ async function addVideogame(){
     });
 
     const feedbackP = document.getElementById("feedback");
-    feedbackP.classList.remove("error");
-    feedbackP.classList.remove("success");
-    feedbackP.classList.remove("hidden");
+    if (feedbackP != null) {
+        feedbackP.classList.remove("error");
+        feedbackP.classList.remove("success");
+        feedbackP.classList.remove("hidden");
+    }
 
 
     if(response.status != 200){
@@ -91,8 +93,10 @@ async function addVideogame(){
     }
 
     let result = await response.json();
+    if (feedbackP != null) {
     feedbackP.innerHTML = "Successfully Added Videogame";
     feedbackP.classList.add("success");
+    }
     showVideogames();
 
     //Wait 3 seconds then remove the result

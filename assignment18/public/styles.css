@@ -1,0 +1,83 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Sections of content*/
+#boba{
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+body {
+  background: #00A2E8;
+}
+
+.main-body-content {
+  background: #FFE7C8;
+  padding: 20px 0px 20px 10px;
+}
+
+.boba-tea-creations, .main-body-content div{
+  background: #DC9272;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+
+/* Animation */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+ /* Styling */
+
+img {
+  margin: 0px;
+}
+
+#nav-bar{
+  display:flex;
+  background: #EABBCA;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#nav-bar li {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin:auto;
+  font-size: 20px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-body-content input, .main-body-content button{
+  margin: 5px;
+}
+
+.hidden{
+  display: none;
+}
+
+.main-body-content button{
+  margin: 10px 0px 30px 0px;
+}
